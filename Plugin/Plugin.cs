@@ -50,7 +50,7 @@ public class Plugin : BaseUnityPlugin
                 excludedDifficulties.Add((WildSpawnType)botType.wildSpawnType, untarDifficulties);
                 Logger.LogInfo($"Successfully added {botType.typeName} to the excluded difficulties list");
             }
-            Traverse.Create(typeof(BotSettingsRepoClass)).Field<Dictionary<WildSpawnType, GClass769>>("dictionary_0").Value.Add((WildSpawnType)botType.wildSpawnType, new GClass769(true, true, false, $"ScavRole/{botType.scavRole}", (ETagStatus)0));
+            Traverse.Create(typeof(BotSettingsRepoClass)).Field<Dictionary<WildSpawnType, GClass790>>("dictionary_0").Value.Add((WildSpawnType)botType.wildSpawnType, new GClass790(true, true, false, $"ScavRole/{botType.scavRole}", (ETagStatus)0));
         }
 
         /*if (!excludedDifficulties.ContainsKey((WildSpawnType)UNTAREnums.BotUNTARValue))
@@ -58,7 +58,7 @@ public class Plugin : BaseUnityPlugin
             excludedDifficulties.Add((WildSpawnType)UNTAREnums.BotUNTARValue, untarDifficulties);
             Logger.LogInfo("Successfully added UNTAR to the excluded difficulties list");
         }
-        Traverse.Create(typeof(BotSettingsRepoClass)).Field<Dictionary<WildSpawnType, GClass769>>("dictionary_0").Value.Add((WildSpawnType)UNTAREnums.BotUNTARValue, new GClass769(true, true, false, $"ScavRole/{UNTAREnums.BotUNTARRole}", (ETagStatus)0));*/
+        Traverse.Create(typeof(BotSettingsRepoClass)).Field<Dictionary<WildSpawnType, GClass790>>("dictionary_0").Value.Add((WildSpawnType)UNTAREnums.BotUNTARValue, new GClass790(true, true, false, $"ScavRole/{UNTAREnums.BotUNTARRole}", (ETagStatus)0));*/
 
         LoadUNTARSettings();
 
