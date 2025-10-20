@@ -35,9 +35,6 @@
     <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DrakiaXYZ-BigBrain">
-      <HintPath>Reference\DrakiaXYZ-BigBrain.dll</HintPath>
-    </Reference>
     <Reference Include="PhysicsModule">
       <HintPath>..\..\EscapeFromTarkov_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>

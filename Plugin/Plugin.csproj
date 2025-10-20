@@ -19,10 +19,10 @@
 		  <HintPath>..\..\..\BepInEx\core\0Harmony.dll</HintPath>
 		</Reference>
 		<Reference Include="DrakiaXYZ-BigBrain">
-		  <HintPath>..\Reference\DrakiaXYZ-BigBrain.dll</HintPath>
+		  <HintPath>..\..\..\BepInEx\plugins\DrakiaXYZ-BigBrain.dll</HintPath>
 		</Reference>
 		<Reference Include="SAIN">
-		  <HintPath>..\Reference\SAIN\SAIN.dll</HintPath>
+		  <HintPath>..\..\..\BepInEx\plugins\SAIN\SAIN.dll</HintPath>
 		</Reference>
 		<Reference Include="spt-custom">
 		  <HintPath>..\..\..\BepInEx\plugins\spt\spt-custom.dll</HintPath>

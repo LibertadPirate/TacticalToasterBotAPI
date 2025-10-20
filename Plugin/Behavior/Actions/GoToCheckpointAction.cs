@@ -14,13 +14,14 @@ namespace TacticalToasterUNTARGH.Behavior.Actions
         public static Vector3 patrolPoint = new Vector3(-140f, -1f, 410f);
 
         private CustomNavigationPoint guardPoint;
-        private GClass385 baseSteeringLogic = new GClass385();
+        private BotSteering baseSteeringLogic;
         private float checkDelay;
 
         private bool teleported = false;
 
         public GoToCheckpointAction(BotOwner botOwner) : base(botOwner)
         {
+            baseSteeringLogic = BotSteering.Create(botOwner);
         }
 
         public override void Start()
@@ -94,7 +95,7 @@ namespace TacticalToasterUNTARGH.Behavior.Actions
         public void UpdateSteering()
         {
             BotOwner.Steering.LookToMovingDirection();
-            baseSteeringLogic.Update(BotOwner);
+            baseSteeringLogic.ManualFixedUpdate();
         }
 
         public override void BuildDebugText(StringBuilder stringBuilder)
